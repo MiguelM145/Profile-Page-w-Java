@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="background">
+            <div class="nav">
+                <h1 class="title">Profile</h1>
+                <ul class="links">
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#" >My Profile</a></li>
+                    <li><a href="#" >My Connections</a></li>
+                    <li><button class="button">Sign Out</button></li>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <!-- First row -->
+                <!-- first box header-->
+            <div class="firstcol">
+                <div class="profile">
+                    <img src="jane-m.jpg" alt="jane-m" class="profilepic">
+                </div>
+                <!-- Box Descriptions for profile -->
+                <div class="connections">
+                    <div class="profilecont">
+                        <h1 id="proName"> Jane Doe </h1>
+                        
+                        <img src="map-marker.png" alt="mapmarker" class ="icon"> 
+                        
+                        <label class="city"> Seattle </label>
+
+                        <p class="protitle"> Developer | Engineer | Problem Solver </p>
+                        <p class="desc"> Master of shadows and the internet!</p>
+
+                        <img src="gear.png" alt="gear" class="icon">
+                        <button onclick="changeName(`any other name`)"><a href="#"> edit profile </a></button>
+                    </div>
+                </div>
+                <!-- New Box Header For Education-->
+                <div class="connecthead" id="movething">
+                    <label class="heading" id="edu"> Education</label>
+                </div>
+                <!-- Box Content for dates and coding dojo stuff -->
+                <div class="connections">
+                    <p class="descT"> Coding Dojo - Full Stack BootCamp</p>
+                    <p class="date"> Dec 2019 - Mar 2020 </p>
+                    <p class="desc" id="bottomwords"> Triple black belt in Python, MERN, and C#</p>
+
+                </div>
+            </div>
+
+            <!-- Second Row-->
+            <div class="secondcol">
+                <div class="connecthead">
+                    <label class="number" id="connectReq"> 2</label>
+                    <label class="heading"> Connection Request</label>
+                </div>
+                <!-- Connection Request Box-->
+                <div class="connections">
+                    <!-- seperate user lines-->
+                    <div class="users" id="todd">
+                        <span class="pics">
+                            <img src="todd-s.jpg" alt="todd-s" class="person"> 
+                            <span class="name"> Todd S. </span>
+                        </span>
+                        <span class="accdec">
+                            <button onclick="add(`#todd`)"><img src="accept-circle.png" class="buttons"></button>
+                            <button onclick="remove(`#todd`)"><img src="close-circle.png" class="buttons"></button>
+                        </span>
+                    </div>
+                    <!-- second user line-->
+                    <div class="users" id="phil">
+                        <span class="pics">
+                                <img src="phil-s.jpg" alt="phil-s" class="person">
+                                <span class="name"> Phil S.</span>
+                        </span>
+                        <span class="accdec">
+                            <button onclick="add(`#phil`)"><img src="accept-circle.png" class="buttons"></button>
+                            <button onclick="remove(`#phil`)"><img src="close-circle.png" class="buttons"></button>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- New Box Header for Your Connections-->
+                <div class="connecthead">
+                    <label class="number" id="connectAmount"> 418 </label>
+                    <label class="heading"> Your Connections</label>
+                </div>
+                <!--Start of box wrap for the users and each individual line-->
+                <div class="connections">
+                    <div class="users">
+                        <span class="pics">
+                            <img src="adrien-s.jpg" alt="adiren-s" class="person">
+                            <span class="name"> Adrien S.</span>
+                        </span>
+                    </div>
+                    <div class="users">
+                        <span class="pics">
+                            <img src="anne-s.jpg" alt="anne-s" class="person">
+                            <span class="name"> Anne S.</span>
+                        </span>
+                    </div>
+                    <div class="users">
+                        <span class="pics">
+                            <img src="alayne-s.jpg" alt="alayne-s" class="person">
+                            <span class="name"> Alayne S.</span>
+                        </span>
+                    </div>
+                    <div class="users">
+                        <span class="pics">
+                            <img src="arry-s.jpg" alt="arry-s" class="person">
+                            <span class="name"> Arry S.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
