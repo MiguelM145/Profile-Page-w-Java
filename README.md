@@ -1,1 +1,1 @@
-# Profile-Page-w-Java
+# Profile-Page-w-Java is a school assignment
